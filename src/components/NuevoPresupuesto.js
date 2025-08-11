@@ -1,5 +1,6 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { Text, View, StyleSheet, SafeAreaView, Pressable, TextInput } from "react-native";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import globalStyles from "../styles";
 
 const NuevoPresupuesto = ({handleNuevoPresupuesto, presupuesto, setPresupuesto}) =>{
